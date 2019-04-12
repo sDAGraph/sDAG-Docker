@@ -5,3 +5,6 @@
 ### 3. sudo docker-compose stop
 ### 4. sudo docker system prune
 
+## BASIC FUNCTION
+
+### 1. sudo docker rmi -f $(sudo docker images -q)
