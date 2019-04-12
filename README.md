@@ -11,4 +11,8 @@ sudo docker rmi -f $(sudo docker images -q)
 sudo docker stop $()
 sudo docker container rm $()
 sudo docker system prune
+# Delete all containers
+docker rm $(docker ps -a -q)
+# Delete all images
+docker rmi $(docker images -q)
 ```
