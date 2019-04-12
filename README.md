@@ -1,6 +1,6 @@
 ## STEPS TO BUILD AND DEPLOY CHAIN BASED ON DOCKER:
 ```
-sudo docker build -t test5 .
+sudo docker build -t sdag .
 sudo docker-compose up -d
 sudo docker-compose stop
 ```
