@@ -1,13 +1,14 @@
 ## STEPS TO BUILD AND DEPLOY CHAIN BASED ON DOCKER:
+```
+sudo docker build -t test5 .
+sudo docker-compose up -d
+sudo docker-compose stop
+```
 
-### 1. sudo docker build -t test5 .
-### 2. sudo docker-compose up -d
-### 3. sudo docker-compose stop
-
-
-## BASIC FUNCTION
-
-### 1. sudo docker rmi -f $(sudo docker images -q)
-### 2. sudo docker stop $()
-### 3. sudo docker container rm $()
-### 4. sudo docker system prune
+## BASIC FUNCTION NOTE
+```
+sudo docker rmi -f $(sudo docker images -q)
+sudo docker stop $()
+sudo docker container rm $()
+sudo docker system prune
+```
