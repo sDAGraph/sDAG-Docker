@@ -1,10 +1,32 @@
 version: "3"
 
 services:
-  node1:
-    image: test5
-    container_name: ethereum-node1
-    hostname: node1
-    ports:
-      - "9000:9000"
-    #command: "geth"
+    CICnode:
+        image: sdag
+        container_name: CIC9006
+        hostname: CIC
+        ports:
+            - "9006:9006"
+        command: "./open-bin/client -datadir CIC -peer http://125.227.132.127:9006/ -port 9006"
+    AITCnode:
+        image: sdag
+        container_name: AITC9005
+        hostname: AITC
+        ports:
+            - "9005:9005"
+        command: "./open-bin/client -datadir AITC -peer http://125.227.132.127:9005/ -port 9005"
+    TGCnode:
+        image: sdag
+        container_name: TGC9004
+        hostname: TGC
+        ports:
+            - "9004:9004"
+        command: "./open-bin/client -datadir TGC -peer http://125.227.132.127:9004/ -port 9004"
+    BNNnode:
+        image: sdag
+        container_name: BNN9003
+        hostname: BNN
+        ports:
+            - "9003:9003"
+        command: "./open-bin/client -datadir BNN -peer http://125.227.132.127:9003/ -port 9003"
+
