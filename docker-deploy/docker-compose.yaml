@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+    CICnode:
+        image: sdagserver
+        container_name: sdag32000
+        hostname: sdag32000
+        ports:
+            - "32000:32000"
+        command: "node ./TungServer/index.js 4 32000 1 http://125.227.142.127:9999"
+
